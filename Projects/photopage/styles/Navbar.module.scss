@@ -1,0 +1,29 @@
+.DisplayFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.Navbar{
+    @extend .DisplayFlex;
+    
+    height: 60px;
+    width: 100%
+}
+
+.Logo{
+    @extend .DisplayFlex;
+    width: 25%;
+    padding: 0px 50px
+}
+
+.Menu{
+    @extend .DisplayFlex;
+    width: 30%;
+    padding: 0px 50px;
+
+    span{
+        color: #ffbe5f;
+    }
+}
+

@@ -1,0 +1,34 @@
+.ProductContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productLayout{
+    width: 80%;
+    height: 100%;
+    // border: 1px solid blue;
+    margin: 0px auto;
+}
+
+.ButtonLeft,.ButtonRight{
+    width: 10%;
+    text-align: center;
+    border-top: 150px solid transparent;
+    border-bottom:150px solid transparent;
+    opacity: 0.1;
+}
+
+.ButtonLeft{
+    border-right: 50px solid rgb(206, 206, 206);
+}
+
+.ButtonRight{
+    border-left: 50px solid rgb(206, 206, 206);
+}
+
+.ButtonLeft:hover,.ButtonRight:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+

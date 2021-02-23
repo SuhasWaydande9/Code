@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap");
+.primeColor {
+  background-color: #fddab2 !important;
+}
+
+.primeText {
+  color: #313753 !important;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #252525;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+}
+
+.Display_Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.textOff {
+  color: #fddab2;
+  text-shadow: #313753 0px 0px 5px,   #313753 0px 0px 5px,   #313753 0px 0px 5px, #313753 0px 0px 5px,   #313753 0px 0px 5px,   #313753 0px 0px 5px;
+}
+
+@-webkit-keyframes TextIntro {
+  0% {
+    letter-spacing: 35px;
+  }
+  100% {
+    letter-spacing: 10.2px;
+  }
+}
+
+@keyframes TextIntro {
+  0% {
+    letter-spacing: 35px;
+  }
+  100% {
+    letter-spacing: 10.2px;
+  }
+}
+
+.Intro {
+  -webkit-animation: TextIntro 1s ease-in-out 0s 1;
+          animation: TextIntro 1s ease-in-out 0s 1;
+}
+
+.Intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: calc(2.5vw + 2.5vh);
+  font-weight: 600;
+  height: calc(100vh + 70px);
+  font-family: 'Coda Caption', sans-serif;
+  letter-spacing: 10.2px;
+}
+
+.Product {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.ProductContainer {
+  width: 1440px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Circle {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #313753;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  right: 120px;
+  top: 50px;
+}
+
+.circle2 {
+  left: 170px;
+  bottom: 50px;
+}
+/*# sourceMappingURL=Home.module.css.map */

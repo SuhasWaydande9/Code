@@ -1,0 +1,274 @@
+.IntroSection {
+  width: 100vw;
+  height: 700px;
+  background-color: aquamarine;
+  margin: 0px auto;
+  background-image: url("../public/images/annie-spratt-hrqMHFKC6g8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scaleX(-1) !important;
+          transform: scaleX(-1) !important;
+}
+
+.Overlay {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
+  background-image: linear-gradient(90deg, black, transparent);
+  -webkit-transform: scaleX(-1) !important;
+          transform: scaleX(-1) !important;
+  color: white;
+}
+
+.sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 10%;
+  height: calc(100% - 60px);
+}
+
+.sideNav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sideNav span {
+  height: 230px;
+  border: 2px solid #222222;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 60px);
+}
+
+.About {
+  height: calc(100% - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.About h1 {
+  font-size: 3rem;
+}
+
+.About p {
+  font-size: 1.2em;
+  color: lightgray;
+}
+
+.About button {
+  width: 120px;
+  height: 40px;
+  border: 3px double #ff9e0d;
+  background: none;
+  font-size: 18px;
+  color: #ff9e0d;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.Icons li {
+  width: 30px;
+  background-repeat: no-repeat;
+  height: 55px;
+  background-position: center;
+  background-size: contain;
+}
+
+.twitter {
+  background-image: url("../public/icons/icons8-twitter.svg");
+}
+
+.facebook {
+  background-image: url("../public/icons/icons8-facebook.svg");
+}
+
+.instagram {
+  background-image: url("../public/icons/icons8-instagram-old.svg");
+}
+
+.linkedIn {
+  background-image: url("../public/icons/icons8-linkedin.svg");
+}
+
+.Services {
+  width: 100vw;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ServiceContainer {
+  width: 80%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ServiceCard {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.MyWorks {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.Slider {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.images {
+  width: auto;
+  height: 100%;
+}
+
+.LeftButton {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 0px;
+  border-right: 25px solid #ff9e0d;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.RightButton {
+  position: absolute;
+  top: calc(50% - 100px);
+  right: 0px;
+  border-left: 25px solid #ff9e0d;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.AboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 700px;
+}
+
+.AboutContainer {
+  width: 100%;
+  height: 80%;
+  background-color: #e3e3e3;
+}
+
+.Prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 600px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PriceBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 400px;
+  margin: 40px;
+  background-color: #dadada;
+  padding: 20px;
+}
+
+.checkboxes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Home.module.css.map */

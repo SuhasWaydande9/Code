@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.Navbar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefef;
+    color: #3a3a3a;
+    font-family: 'Poppins', sans-serif;
+
+
+    ul{
+        display: flex;
+        height: 100%;
+        li{
+            height: 100%;
+            padding: 0px 5px;
+            line-height: 50px;
+            list-style: none;
+            cursor: pointer;
+        }
+        li:hover{
+            color: rgb(141, 141, 141);
+        }
+    }
+
+    button{
+        height: 70%;
+        padding: 0px 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.Specs-Section{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    .Watch{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 200px;
+            height: 200px;
+            align-self: center;
+        }
+    }
+    .Info{
+        text-align: center;
+    }
+}
+
+.About{
+    video{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        object-fit: fill;
+        position: absolute;
+    }
+
+    .VideoContent {
+        position: relative;
+        color: white;
+    }
+}

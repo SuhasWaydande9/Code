@@ -1,0 +1,31 @@
+.DisplayFlex, .Navbar, .Logo, .Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar {
+  height: 60px;
+  width: 100%;
+}
+
+.Logo {
+  width: 25%;
+  padding: 0px 50px;
+}
+
+.Menu {
+  width: 30%;
+  padding: 0px 50px;
+}
+
+.Menu span {
+  color: #ffbe5f;
+}
+/*# sourceMappingURL=Navbar.module.css.map */
