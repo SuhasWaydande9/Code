@@ -1,13 +1,7 @@
-.DisplayFlex, .Navbar, .Logo, .Menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.DisplayFlex, .Menu, .Logo, .Navbar {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Navbar {
@@ -24,8 +18,12 @@
   width: 30%;
   padding: 0px 50px;
 }
-
 .Menu span {
   color: #ffbe5f;
 }
-/*# sourceMappingURL=Navbar.module.css.map */
+
+@media screen and (max-width: 720px) {
+  .Menu {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

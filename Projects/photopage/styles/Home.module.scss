@@ -41,6 +41,7 @@
 .main{
     display: flex;
     height: calc(100% - 60px);
+    width: 100vw;
 }
 
 .About{
@@ -48,6 +49,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     h1{
         font-size: 3rem;
@@ -135,45 +138,20 @@
     position: relative;
 }
 
-.Slider{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow-x: scroll;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+// .Slider{
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     overflow-x: scroll;
+//     white-space: nowrap;
+//     scroll-behavior: smooth;
 
-}
+// }
 
-.images{
-    width: auto;
-    height: 100%;
-}
-
-.LeftButton{
-    position: absolute;
-    top: calc(50% - 100px);
-    left: 0px;
-    border-right: 25px solid #ff9e0d;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    width: 60px;
-    background-color: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.RightButton{
-    position: absolute;
-    top: calc(50% - 100px);
-    right: 0px;
-    border-left: 25px solid #ff9e0d;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    width: 60px;
-    background-color: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
+// .images{
+//     width: auto;
+//     height: 100%;
+// }
 
 .AboutMe{
     display: flex;
@@ -190,28 +168,120 @@
 }
 
 // Prices Section
+.Pricing{
+    width: 100vw;
+}
 
 .Prices{
+    width: 100%;
+    min-height: 500px;
     display: flex;
-    width: 100vw;
-    height: 600px;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+
 }
 
 .PriceBox{
+    flex: 1;
+    margin: 40px;
+    width: 300px;
+    max-width: 300px;
+    height: 400px;
+    line-height: 1.4em;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 400px;
-    margin: 40px;
-    background-color: rgb(218, 218, 218);
-    padding: 20px;
+    background-color: rgb(199, 199, 199);
 }
 
 .checkboxes{
+    padding: 20px 0px;
     div{
         display: flex;
+    }
+}
+
+//Contact
+.Contact{
+    background-image: url('../public/images/kenny-sexton-2fIxy1Z--OY-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0px;
+    color:white;
+    width: 100vw;
+}
+
+.SendMessage{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    input{
+        width: 80%;
+        max-width: 500px;
+        margin: 20px;
+        padding: 5px;
+    }
+    button{
+        width: 80%;
+        max-width: 500px;
+        height: 40px;
+        border: none;
+        background-color: #ff9e0d;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+//Footer
+
+.Footer{
+    min-height: 150px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    width: 100vw;
+
+    footer{
+        text-align: center;
+    }
+    .Icons{
+        flex-wrap: wrap;
+    }
+}
+
+.Footer > div, .Footer > footer{
+    flex: 1;
+}
+
+@media screen and (max-width:720px){
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .sideNav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: calc(100% - 60px);
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+        span{
+            display: none;
+        }
     }
 }

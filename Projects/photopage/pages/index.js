@@ -6,6 +6,8 @@ import Services from "../components/Services";
 import MyWorks from "../components/MyWorks";
 import AboutMe from "../components/AboutMe";
 import Pricing from "../components/Pricing";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -18,14 +20,8 @@ export default function Home() {
       <MyWorks />
       <AboutMe />
       <Pricing />
-
-      <footer className={styles.footer}>
-        <a
-          target="_blank"
-        >
-          Copyright&#169;SuhasWaydande
-        </a>
-      </footer>
+      <Contact />
+      <Footer />
     </div>
   );
 }
